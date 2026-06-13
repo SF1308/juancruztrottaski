@@ -1,121 +1,114 @@
 export const siteConfig = {
   palette: {
-    "bg": "#0f172a",
-    "primary": "#f8fafc",
-    "accent": "#fde047" // Un amarillo más "Saul"
+    bg: '#0F172A',
+    primary: '#F8FAFC',
+    accent: '#38BDF8'
   },
   profile: {
-    name: "Saul Goodman",
-    title: "Instructor de Esquí (y Asesor Legal de Montaña)",
-    location: "Albuquerque Ski Crest / Andorra",
+    name: 'Juan Cruz Trotta',
+    title: 'Instructor de ski Nivel 3 ISIA',
+    location: 'Bariloche Cerro Catedral',
     experience: {
       years: 15,
-      instructorLevel: "Nivel 3 - Certificado por la 'Barra' de Instructores"
+      instructorLevel: 'Aadidess Nivel 3 ISIA'
     },
-    languages: ["Español", "Inglés", "Lenguaje de señas para evitar multas"],
+    languages: [
+      'English',
+      'Español',
+      'Portugues'
+    ],
     highlights: [
-      "¿Problemas con el paralelo? ¡Mejor llama a Saul!",
-      "Especialista en 'desaparecer' en la nieve polvo",
-      "Experto en encontrar los mejores atajos de la montaña"
+      'Clases para todos los niveles',
+      'Clases para niños',
+      'Clases para adultos',
+      'Entrenador de Freeride',
+      'Clases de Freestyle',
+      'Clases personalizadas',
+      'Asesoramiento tecnico'
     ],
     certifications: [
-      "Máster en Descenso por la Universidad de Samoa Americana",
-      "Certificación en Evasión de Obstáculos y Patrullas",
-      "Protocolo de Emergencias 'S'all Good, Man'"
+      'Aadidess Nivel 3',
+      'Isia Stamp',
+      'Aiare 1 + Rescue (Avalanchas)',
+      'Entrenador de Freeride IFSA (L100)',
+      'First Aid (Andes Capacitacion)'
     ],
     contact: {
-      whatsapp: "+34555555555",
-      email: "saul@lawyerski.com",
-      instagram: "@bettercallsaul_ski"
+      whatsapp: '+5492944290610',
+      email: 'trottajuancruz@gmail.com',
+      instagram: '@juancruztrottaski'
     }
   },
   hero: {
-    subheadline: "No dejes que una mala técnica te mande a juicio. ¡Aprende a esquiar como un profesional!",
+    subheadline: 'Clases de Ski en Cerro Catedral',
     ctaPrimary: {
-      label: "¡Llama a Saul ahora!",
-      action: "whatsapp" as const,
+      label: 'Reserva tus clases Whatsapp',
+      action: 'whatsapp'
     },
     ctaSecondary: {
-      label: "Ver mis 'coartadas'",
-      action: "scroll" as const,
-    },
-    whatsapp: "+34555555555",
+      label: 'Clases y valores',
+      action: 'scroll'
+    }
   },
   about: {
-    bio: "Soy Saul Goodman, y estoy aquí para decirte que, legalmente, cualquiera puede esquiar, ¡pero solo conmigo lo harás sin romperte una pierna! He pasado temporadas en los lugares más remotos, desde los Andes hasta los Pirineos, perfeccionando el arte de la persuasión gravitacional.",
+    bio: 'Esquiador desde hace más de 20 años, con una amplia experiencia en montaña. Apasionado por los deportes de aventura, como el parapente, el trekking y la escalada en roca, aunque especializado en la enseñanza del esqui desde hace 15 años!\n\nConocimientos y experiencia en enseñanza de diversas disciplinas, incluyendo esquí alpino, freestyle y freeride.',
     experience: [
       {
-        name: "Grandvalira",
-        country: "Andorra",
-        flag: "🇦🇩"
+        name: 'Cerro Catedral',
+        country: 'Argentina',
+        flag: '🇦🇷'
       },
       {
-        name: "Las Leñas",
-        country: "Argentina",
-        flag: "🇦🇷"
+        name: 'Laderas Cerro Perito Moreno',
+        country: 'Argentina',
+        flag: '🇦🇷'
       },
       {
-        name: "Portillo",
-        country: "Chile",
-        flag: "🇨🇱"
+        name: 'Grandvalira',
+        country: 'Andorra',
+        flag: '🇦🇩'
       },
       {
-        name: "Taos Ski Valley",
-        country: "United States",
-        flag: "🇺🇸"
+        name: 'Vail',
+        country: 'United States',
+        flag: '🇺🇸'
+      },
+      {
+        name: 'Beaver creek',
+        country: 'United States',
+        flag: '🇺🇸'
+      },
+      {
+        name: 'Breckenridge',
+        country: 'United States',
+        flag: '🇺🇸'
       }
     ]
   },
   services: [
     {
-      "title": "La 'Coartada' de Iniciación",
-      "description": "Si nunca te has puesto unos esquís, yo te doy la mejor defensa. Posición básica y frenado antes de que la patrulla te vea.",
-      "price": 50,
-      "currency": "EUR",
-      "duration": "1 hora"
+      title: 'Clase Particular Half Day',
+      description: 'Clase de medio dia / 9:30 a 12:30 o 13:00 a 16:00 / Capacidad hasta 4 personas / Principiantes, intermedios o Avanzados (segun nivel)',
+      duration: '3 horas',
+      price: 350,
+      currency: 'USD'
     },
     {
-      "title": "Lavado de Técnica (Carving)",
-      "description": "Limpiamos esos giros sucios. Perfeccionamiento en pista para que parezca que naciste con las tablas puestas.",
-      "price": 150,
-      "currency": "EUR",
-      "duration": "3 horas"
+      title: 'Clase particular Mini Day',
+      description: 'Clase de medio dia / 9:30 a 14:00 / Capacidad hasta 4 personas / Principiantes, intermedios o Avanzados (segun nivel)',
+      duration: '4 horas',
+      price: 450,
+      currency: 'USD'
     },
     {
-      "title": "Operación Fuera de Pista",
-      "description": "Para los que buscan el anonimato en la nieve virgen. Guía experto en terrenos donde nadie te encontrará.",
-      "price": 300,
-      "currency": "EUR",
-      "duration": "Jornada completa"
-    },
-    {
-      "title": "Clase VIP 'Protección de Testigos'",
-      "description": "Esquía sin ser visto. Un recorrido por las zonas más exclusivas y menos concurridas de la estación.",
-      "price": 450,
-      "currency": "EUR",
-      "duration": "Jornada completa"
-    },
-    {
-      "title": "Workshop de Seguridad y 'Leyes' de Montaña",
-      "description": "Cómo evitar accidentes y qué hacer cuando las cosas se ponen feas. Uso de ARVA y protocolos de rescate.",
-      "price": 120,
-      "currency": "EUR",
-      "duration": "2.5 horas"
-    },
-    {
-      "title": "Entrenamiento para Clientes Difíciles",
-      "description": "¿Eres un caso perdido? Yo te hago esquiar. Resultados garantizados o te devuelvo el 10% (menos mis honorarios).",
-      "price": 200,
-      "currency": "EUR",
-      "duration": "3 horas"
+      title: 'Clase Particular Full day (Recomendado)',
+      description: 'Disponibilidad completa del instructor / 9:30 a 16:30 / Capacidad hasta 4 personas / Principiantes, intermedios o Avanzados (segun nivel) / Acompañamiento en rental',
+      duration: '7 horas',
+      price: 550,
+      currency: 'USD'
     }
   ],
   booking: {
-    mode: "school_and_whatsapp" as const,
-    school: {
-      name: "H&M Ski Associates",
-      url: "https://www.bettercallsaul.com",
-    },
-    whatsapp: "+34555555555",
-  },
+    mode: 'whatsapp_only'
+  }
 };
