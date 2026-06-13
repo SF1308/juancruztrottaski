@@ -49,7 +49,7 @@ const ServicesSection = () => {
 
               {/* Meta */}
               <div
-                className="flex items-center gap-4 mt-auto pt-3"
+                className="flex flex-col gap-3 mt-auto pt-3 sm:flex-row sm:items-center sm:justify-between"
                 style={{
                   borderTop: `1px solid ${palette.accent}33`,
                 }}
@@ -61,6 +61,16 @@ const ServicesSection = () => {
                   <Clock className="w-4 h-4" />
                   {s.duration}
                 </span>
+
+                {s.price != null && s.currency ? (
+                  <span
+                    className="flex items-center gap-1 text-sm"
+                    style={{ color: `${palette.primary}AA` }}
+                  >
+                    <DollarSign className="w-4 h-4" />
+                    {`${s.price} ${s.currency}`}
+                  </span>
+                ) : null}
               </div>
 
               {/* CTA */}
