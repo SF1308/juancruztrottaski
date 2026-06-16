@@ -20,9 +20,9 @@ const Index = () => {
         <TrustBadges />
         <AboutSection />
         {/* <GallerySection /> */}
-        <ReviewGallerySlider reviews={siteConfig.reviews} />
         <ServicesSection />
         {/* <BookingSection /> */}
+        <ReviewGallerySlider reviews={siteConfig.reviews} />
         <ContactSection />
         {/* <FinalCTA /> */}
         <footer className="py-6 text-center text-sm text-muted-foreground">
