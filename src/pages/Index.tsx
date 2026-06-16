@@ -3,7 +3,7 @@ import TrustBadges from "@/components/landing/TrustBadges";
 import AboutSection from "@/components/landing/AboutSection";
 import ServicesSection from "@/components/landing/ServicesSection";
 import GallerySection from "@/components/landing/GallerySection";
-import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import ReviewGallerySlider from "@/components/landing/ReviewGallerySlider";
 import BookingSection from "@/components/landing/BookingSection";
 import ContactSection from "@/components/landing/ContactSection";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -20,8 +20,8 @@ const Index = () => {
         <TrustBadges />
         <AboutSection />
         <GallerySection />
+        <ReviewGallerySlider reviews={siteConfig.reviews} />
         <ServicesSection />
-        {/* <TestimonialsSection /> */}
         {/* <BookingSection /> */}
         <ContactSection />
         {/* <FinalCTA /> */}

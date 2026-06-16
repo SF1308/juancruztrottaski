@@ -1,3 +1,7 @@
+import ski1 from "@/assets/ski1.jpg";
+import ski2 from "@/assets/ski2.jpg";
+import ski3 from "@/assets/ski3.jpg";
+
 export const siteConfig = {
   palette: {
     bg: '#0F172A',
@@ -107,6 +111,29 @@ export const siteConfig = {
       price: 550,
       currency: 'USD'
     }
+  ],
+  reviews: [
+    {
+      name: 'Lucía Fernández',
+      comment: 'Excelente experiencia: la clase fue personalizada, divertida y muy segura. Aprendí rápido gracias a la paciencia del instructor.',
+      photo: ski1,
+      alt: 'Before and after de clase de ski',
+      flag: '🇦🇷',
+    },
+    {
+      name: 'Mateo Gómez',
+      comment: 'La mejor guía para explorar Catedral. Sentí confianza desde el primer minuto y disfruté muchísimo el día.',
+      photo: ski2,
+      alt: 'Instructor enseñando técnica de esquí',
+      flag: '🇦🇷',
+    },
+    {
+      name: 'Sara Martins',
+      comment: 'Perfecto para quienes viajan en familia. Las clases fueron adaptadas a nuestro nivel y el servicio fue impecable.',
+      photo: ski3,
+      alt: 'Familia disfrutando la montaña durante una clase',
+      flag: '🇧🇷',
+    },
   ],
   booking: {
     mode: 'whatsapp_only'
