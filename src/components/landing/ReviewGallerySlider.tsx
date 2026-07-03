@@ -20,7 +20,7 @@ type ReviewGallerySliderProps = {
 
 
 
-const ReviewGallerySlider = ({ reviews = [], title = "Testimonios y galería" }: ReviewGallerySliderProps) => {
+const ReviewGallerySlider = ({ reviews = [], title = "Testimonios y galería " }: ReviewGallerySliderProps) => {
   const hasReviews = reviews.some((item) => Boolean(item.comment?.trim()));
   const slides = hasReviews ? reviews : [];
 
