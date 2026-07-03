@@ -11,8 +11,8 @@ const TrustBadges = () => {
 
   // El resto de badges (highlights + certificaciones) ya no incluye idiomas.
   const badges = [
-    ...profile.highlights,
-    ...profile.certifications.slice(0, 2),
+    // ...profile.highlights,
+    ...profile.certifications,
   ].filter(Boolean);
 
   const icons = [Star, Award];

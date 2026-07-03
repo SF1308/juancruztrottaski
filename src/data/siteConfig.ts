@@ -21,10 +21,10 @@ export const siteConfig = {
     ],
     highlights: [
       'Clases para todos los niveles',
-      'Clases para niños',
-      'Clases para adultos',
+      // 'Clases para niños',
+      // 'Clases para adultos',
       'Entrenador de Freeride',
-      'Clases de Freestyle',
+      // 'Clases de Freestyle',
       'Clases personalizadas',
       'Asesoramiento tecnico'
     ],
