@@ -15,9 +15,9 @@ export const siteConfig = {
       instructorLevel: 'Aadidess Nivel 3 ISIA'
     },
     languages: [
-      'English',
-      'Español',
-      'Portugues'
+      { flag: "🇺🇸", label: "English" },
+      { flag: "🇪🇸", label: "Español" },
+      { flag: "🇧🇷", label: "Portugues" },
     ],
     highlights: [
       'Clases para todos los niveles',
