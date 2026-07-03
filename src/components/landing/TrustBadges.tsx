@@ -1,5 +1,5 @@
 import { siteConfig } from "@/data/siteConfig";
-import { Award, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 import image from "@/assets/ski3.jpg";
 
@@ -11,11 +11,8 @@ const TrustBadges = () => {
 
   // El resto de badges (highlights + certificaciones) ya no incluye idiomas.
   const badges = [
-    // ...profile.highlights,
-    ...profile.certifications,
+    ...profile.certifications
   ].filter(Boolean);
-
-  const icons = [Star, Award];
 
   return (
     <section className="py-12 md:py-20">
@@ -67,33 +64,20 @@ const TrustBadges = () => {
               </div>
             )}
 
-            {/* Badges: grid responsivo en vez de flex-wrap para evitar
-                la columna gigante cuando hay muchos items */}
+            {/* Credenciales: cada una es su propio bloque (ícono + texto),
+                sin fondo/borde, pero con espacio propio entre sí para que
+                no se lea como un bloque de texto apretado */}
             {badges.length > 0 && (
-              <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                {badges.map((badge, i) => {
-                  const Icon = icons[i % icons.length];
-
-                  return (
-                    <div
-                      key={i}
-                      className="
-                        flex items-center gap-2
-                        rounded-xl
-                        px-4 py-2.5
-                        backdrop-blur-md
-                        bg-white/10
-                        border border-white/20
-                        text-white
-                      "
-                    >
-                      <Icon className="w-4 h-4 shrink-0" />
-                      <span className="text-sm font-medium leading-snug">
-                        {badge}
-                      </span>
-                    </div>
-                  );
-                })}
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2.5 max-w-2xl">
+                {badges.map((badge, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex items-center gap-2 text-white text-sm md:text-base font-medium"
+                  >
+                    <Star className="w-3.5 h-3.5 shrink-0 text-white/60" />
+                    {badge}
+                  </span>
+                ))}
               </div>
             )}
           </div>
